@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  display: inline-block;
+}
+.container .header-bar {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+}
+.container .header-bar .timer {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .header-bar .health {
+  position: relative;
+  height: 30px;
+  width: 100%;
+}
+.container .header-bar .health .full-health {
+  background-color: yellow;
+  height: 30px;
+}
+.container .header-bar .health .health-bar {
+  position: absolute;
+  background: blue;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.container .header-bar .player-health {
+  display: flex;
+  justify-content: flex-end;
+}
+.container .header-bar .player-health .full-health {
+  width: 100%;
+}
+.container .header-bar .player-health .health-bar {
+  left: unset;
+  width: 100%;
+}
+.container .result {
+  position: absolute;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
